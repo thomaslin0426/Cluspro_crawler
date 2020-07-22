@@ -6,11 +6,11 @@ import datetime
 import re
 import requests
 import time
+from bs4 import BeautifulSoup as bs
 
 stop_id = input(">>please key in the latest id:")
 user = input(">>please key in the latest id:")
 pwd = input(">>please key in the latest id:")
-from bs4 import BeautifulSoup as bs
 starttime = datetime.datetime.now()
 login_url = "https://cluspro.bu.edu/login.php?redir=/home.php"
 
