@@ -6,7 +6,6 @@ import datetime
 import re
 import requests
 import time
-from bs4 import BeautifulSoup as bs
 
 stop_id = input(">>please key in the latest id:")
 user = input(">>please key in the latest id:")
@@ -18,7 +17,6 @@ UA = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like 
 header ={"user-agent": UA, "Referer":"https://cluspro.bu.edu/login.php?redir=/home.php"}
 session_requests = requests.session()
 fget = session_requests.get(login_url, headers = header).text
-soup = bs(fget, "html.parser")
 
 postData = {"username":user, "password":pwd, "redir":"/home.php", "action":"Login" }
 session_requests.post(login_url, data = postData, headers = header)
