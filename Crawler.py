@@ -8,8 +8,8 @@ import requests
 import time
 
 stop_id = input(">>please key in the latest id:")
-user = input(">>please key in the latest id:")
-pwd = input(">>please key in the latest id:")
+user = input(">>please key in account:")
+pwd = input(">>please key in password:")
 starttime = datetime.datetime.now()
 login_url = "https://cluspro.bu.edu/login.php?redir=/home.php"
 
